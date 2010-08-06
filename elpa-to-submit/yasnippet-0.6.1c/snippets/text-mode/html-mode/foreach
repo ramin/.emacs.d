@@ -1,0 +1,5 @@
+#name : in html foreach
+# --
+<? foreach (\$${1:variable} as \$${2:key}${3: => \$${4:value}}): ?>
+	// code
+<? endforeach ?>

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: public function
+# key: 
+# binding: "keybinding"
+# expand-env: ((some-var some-value))
+# --
+
+  public function $1()
+  {
+  
+  }

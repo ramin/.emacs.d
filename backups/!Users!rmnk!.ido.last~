@@ -1,0 +1,202 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/" . "rmnk/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/views/" . "search/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/" . "libraries/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/views/stream/" . "partials/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/views/" . "stream/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/node/" . "partials/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/" . "node/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/user/" . "views/")
+ ("/Applications/MAMP/htdocs/stockopedia/system/" . "core/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/" . "controllers/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/terms/" . "controllers/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/template/" . "partials/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/" . "template/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/" . "controllers/")
+ ("/Applications/MAMP/htdocs/stockopedia/modules/" . "search/")
+ ("/Applications/MAMP/htdocs/stockopedia/application/views/home/" . "partials/")
+ ("/Applications/MAMP/htdocs/stockopedia/assets/" . "js/")
+ ("/Applications/MAMP/htdocs/stockopedia/application/views/" . "home/")
+ ("/Applications/MAMP/htdocs/stockopedia/application/" . "controllers/")
+ ("/Applications/MAMP/htdocs/stockopedia/" . "application/")
+ ("/Applications/MAMP/htdocs/" . "stockopedia/")
+ ("/Applications/MAMP/" . "htdocs/")
+ ("/Applications/" . "MAMP/")
+ ("/" . "Users/")
+ ("/Users/rmnk/Desktop/" . "feeds/")
+ ("/Users/rmnk/Music/Amazon MP3/Pharoah Sanders/" . "Black Unity/")
+ ("/Users/rmnk/Music/Amazon MP3/" . "Pharoah Sanders/")
+ ("/Users/rmnk/Music/" . "Amazon MP3/")
+ ("/Users/rmnk/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/rmnk/Desktop/feeds/"
+ "/Applications/MAMP/htdocs/stockopedia/application/controllers/"
+ "/Applications/MAMP/htdocs/stockopedia/application/config/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/search/libraries/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/nodes/controllers/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/search/views/search/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/search/views/search/partials/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/nodes/models/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/search/controllers/"
+ "/Applications/MAMP/htdocs/stockopedia/assets/js/"
+ "/Users/rmnk/Desktop/search/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/controllers/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/template/"
+ "/Applications/MAMP/htdocs/stockopedia/application/views/home/partials/"
+ "/Applications/MAMP/htdocs/stockopedia/application/views/home/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/stream/views/stream/partials/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/node/partials/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/node/"
+ "/Applications/MAMP/htdocs/stockopedia/application/libraries/"
+ "/Applications/MAMP/htdocs/stockopedia/system/core/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/helpers/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/terms/controllers/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/terms/models/"
+ "/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/template/partials/"
+ "/Users/rmnk/Applications/"
+ "/Users/rmnk/Desktop/"
+ "/Users/rmnk/desktop/feeds/"
+ "/Users/rmnk/Desktop/feeds/tests/"
+ "/Users/rmnk/.emacs.d/elpa-to-submit/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "hbmarkets.rb"
+ "test.php"
+ "tickerize.php"
+ "SphinxSearch.php"
+ "node.php"
+ "game.php"
+ "index.php"
+ "navigator.php"
+ "search.php"
+ "stockopedia_merge_july31st.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/rmnk/Desktop/" (19547 19173) "walkow/" "stylestumbler/" "stockoutils/" "stockonlp/" "published/" "pics/" "ortho.rtf" "nbooks/" "labrepl/" "humanshield.co.uk/" "hmrc.rtf" "hbmarkets/" "feeds/" "ExchangeCodes_revised.xls" "example.js" "email to john.rtf" "Downloads/" "1281017101.sql" ".settings/" ".project" ".localized" ".DS_Store" ".dat0bc1.001" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/controllers/" (19547 19291) "test.php" "redirect.php" "image.php" "home.php" "files.php" "ajax.php" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/" (19547 3065) "Sites/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Calibre Library/" "Applications/" ".Xcode/" ".Xauthority" ".wapi/" ".vnc/" ".viminfo" ".vim/" ".Trash/" ".swp" ".svn/" ".subversion/" ".ssh/" ".spumux/" ".shoes/" ".scala_history" ".rvm/" ".ruby_inline/" ".ri/" ".recentf" ".rails-plugin-sources" ".python-eggs/" ".profile" ".pearrc" ".Ovis/" ".netbeans-registration/" ".netbeans/" ".mysql_history" ".m2/" ".lesshst" ".jruby/" ".jline-clojure.main.history" ".jline-clojure.lang.Repl.history" ".irb_history" ".ido.last" ".idlerc/" ".gvimrc" ".gitk" ".gitconfig" ".gemrc" ".gem/" ".gdb_history" ".fonts/" ".fontconfig/" ".emacs.d/" ".emacs-places" ".eclipse_keyring" ".ec2/" ".dvdcss/" ".DS_Store" ".dbshell" ".cups/" ".blurb/" ".bi_li" ".bash_profile" ".bash_history" ".asadmintruststore" ".asadminpass" ".android/" ".adobe/" ".AB64CF89" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/config/" (19543 31381) "upload.php" "tripwire.php" "tinymce.php" "tickerize.php" "routes.php" "redirects.php" "config.php" "cache.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/libraries/" (19515 44606) "SphinxSearch.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/controllers/" (19544 48425) "question.php" "node_actions.php" "node.php" "game.php" "event.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/controllers/" (19544 48340) "search.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/views/search/" (19544 39587) "stocks.php" "partials/" "live.php" "index.php" "filter.php" "advanced.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/views/search/partials/" (19544 28603) "navigator.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/models/" (19543 10490) "node_vote.php" "node_revision.php" "node_report.php" "node_invitation.php" "node_info.php" "node_download.php" "node_disclaimer.php" "node_collaborator.php" "node.php" "history.php" "game_ranking.php" "frontpage.php" "favourite.php" "favorite.php" "editing.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/assets/js/" (19544 24638) "stockopedia_merge_jun26th.js" "stockopedia_merge_july8th.js" "stockopedia_merge_july31st.js" "stockopedia_merge_july1st.js" "pngfix.js" "jquery/" "development.js" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/views/" (19305 58404) "search/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/search/" (19305 58404) "views/" "models/" "libraries/" "controllers/" ".svn/" "../" "./")
+
+ ("/Users/rmnk/Desktop/search/" (19544 12194) "templates/" "sphinx.conf" "original/" "models.rb" "index.users.rb" "index.topics.rb" "index.stocks.rb" "index.pipe.rb" "index.delta.rb" "config.rb" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/template/" (19543 27848) "widgets/" "tooltips/" "template2.php" "snippets/" "partials/" "corporate.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/views/home/partials/" (19543 23699) "small_chart.php" "indices.php" "home_onetoten.php" "home_list.php" "home_item.php" "home_in_discussion.php" "home_feature.php" "home_discussion_list.php" "home_companies.php" "header_companies.php" "companies_C.php" "companies_B.php" "companies_A.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/views/home/" (19543 10721) "topics.php" "stocks.php" "sectors.php" "partials/" "indicies.php" "index.php" "home2.php" "contributors.php" "companies_old.php" "companies_backup.php" "companies.php" "calendar.php" "activity.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/controllers/" (19543 8677) "template_render.php" "template.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/views/stream/partials/" (19517 52534) "stream.php" "report_tools.php" "navigator.php" "content.php" "comment.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/views/stream/" (19511 12406) "personal.php" "partials/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/views/" (19305 58404) "stream/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stream/" (19305 58404) "views/" "models/" "controllers/" "config/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/node/partials/" (19543 7603) "wiki_widget.php" "topics.php" "tools.php" "thumb_rater.php" "syndication.php" "sentiment_form.php" "recent.php" "post_new_button.php" "node_related.php" "node_preview.php" "node_create.php" "header.php" "follow.php" "comments.php" "comment_form.php" "advfn.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/node/" (19543 7547) "view.php" "tooltips/" "recent_all.php" "partials/" "page.php" "node_type_landing.php" "history.php" "feeds.php" "feed.php" "diff.php" "create.php" "articles.php" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/views/" (19379 22188) "question/" "page/" "node/" "game/" "event/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/user/views/" (19305 58404) "user/" "profile/" "import/" "auth/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/user/" (19305 58404) "views/" "vendor/" "models/" "libraries/" "i18n/" "controllers/" "config/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/libraries/" (19539 29663) "Technical_Chart.php" "S3.php" "Publish_queue.php" "Promote.php" "MPTT.php" "Mailchimp.php" "InputFilter.php" "iCalCreator.php" "iCalcreator.class.php" "Html2text.php" "googlemapsample.php" "GoogleMap.php" "Functions.php" "drivers/" "Bitly.php" ".svn/" ".DS_Store" "#Promote.php#" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/system/core/" (19542 53903) "utf8.php" "utf8/" "Kohana.php" "Event.php" "Bootstrap.php" "Benchmark.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/system/" (19492 61535) "views/" "vendor/" "libraries/" "i18n/" "helpers/" "fonts/" "core/" "controllers/" "config/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/helpers/" (19526 6999) "MY_valid.php" "MY_url.php" "MY_inflector.php" "MY_html.php" "MY_form.php" "MY_date.php" "MY_arr.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/terms/controllers/" (19524 51989) "widget.php" "term.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/nodes/" (19335 55749) "views/" "models/" "libraries/" "i18n/" "controllers/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/terms/models/" (19540 63521) "term_info.php" "term.php" "sentiment.php" "node_taxon_term_description.php" "node_taxon_term.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/terms/" (19494 37993) "views/" "models/" "controllers/" "config/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/template/partials/" (19526 7001) "topics.php" "term_bucket.php" "syndication.php" "sub_navigation.php" "search_header.php" "search_form.php" "related_content.php" "pngfix.php" "please_login.php" "javascript_jquery.php" "header.php" "general_header.php" "development_testing_playground.php" "date_field.php" "ajax_tabs.php" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/views/" (19526 7001) "template/" "pagination/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/stockopedia/" (19526 7000) "views/" "vendor/" "libraries/" "helpers/" "controllers/" "config/" ".svn/" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/modules/" (19500 25333) "user/" "twitter/" "terms/" "stream/" "stockopedia/" "search/" "portfolio/" "nodes/" "news/" "mail/" "import/" "gmaps/" "files/" "feeds/" "facebook/" "email/" "debug_toolbar/" "corporate/" "analytics/" "admin/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/assets/" (19521 3621) "yaml/" "tinymce/" "swfupload/" "js/" "highslide/" "highcharts/" "files/" "css/" "cache/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/views/" (19526 7005) "wikis/" "kohana_error_disabled.php" "home/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/.emacs.d/elpa-to-submit/" (19538 2861) "zenburn.el" "yasnippet-0.6.1c/" "twilight.el" "tt-mode.el" "textile-mode.el" "scpaste.el" "ruby-electric.el" "ri.el" "pod-mode.el" "perl-find-library.el" "pcmpl-rake.el" "paredit.el" "oddmuse.el" "notify.el" "moz.el" "mode-compile.el" "markdown-mode.el" "javadoc-help.el" "htmlize.el" "espresso.el" "eshell-vc.el" "erc-highlight-nicknames.el" "cperl-mode.el" "color-theme.el" "cheat.el" "blackboard.el" "../" "./")
+
+ ("/Users/rmnk/desktop/feeds/" (19538 10244) "word.rb" "tweet_test.rb" "tests/" "temp/" "support/" "stockopedia.rb" "stockochallenge.rb" "pdfconvert.rb" "news_20100608To20100708.csv" "models/" "investorschampion_docs.rb" "investors_champion_blog.rb" "hoodlessbrennan.rb" "historic/" "hbmarkets.rb" "google.rb" "fox_import.rb" "feeds_users.rb" "feeds.rb" "facebook.rb" "equitydevelopment.rb" "equitydev_fix.rb" "emails_word.rb" "emails_test.rb" "emails.rb" "edison.xml" "edison.rb" "edison.csv" "connections.rb" "config.rb" "checksums.rb" "bfn_news.rb" "bfn_import.rb" "advfn.rb" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/Desktop/feeds/" (19538 10244) "word.rb" "tweet_test.rb" "tests/" "temp/" "support/" "stockopedia.rb" "stockochallenge.rb" "pdfconvert.rb" "news_20100608To20100708.csv" "models/" "investorschampion_docs.rb" "investors_champion_blog.rb" "hoodlessbrennan.rb" "historic/" "hbmarkets.rb" "google.rb" "fox_import.rb" "feeds_users.rb" "feeds.rb" "facebook.rb" "equitydevelopment.rb" "equitydev_fix.rb" "emails_word.rb" "emails_test.rb" "emails.rb" "edison.xml" "edison.rb" "edison.csv" "connections.rb" "config.rb" "checksums.rb" "bfn_news.rb" "bfn_import.rb" "advfn.rb" ".git/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/" (19500 23147) "uploads/" "tests/" "system/" "sites/" "modules/" "index.php" "images/" "favicon.ico" "assets/" "application/" ".svn/" ".htaccess" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/" (19532 51974) "wp-theme/" "walkowortho/" "stockopedia/" "sphinx/" "soar/" "redis-2.0.0-rc2/" "redis-1.2.6/" "predis/" "oauth/" "newportinvisalign/" "newportbeachorthodontist/" "mongotest/" "mongodb-osx-i386-1.4.2/" "mongoconsole/" "lagunasafe/" "lagunadigital2/" ".DS_Store" "../" "./")
+
+ ("/Applications/" (19537 59117) "Yojimbo.app/" "xACT.app/" "WhatSize.zip" "WhatSize.app/" "VMware Fusion.app/" "VLC.app/" "Versions.app/" "Utilities/" "Tweetie.app/" "Transmit.app/" "Transmission.app/" "Time Machine.app/" "TextMate.app/" "TextEdit.app/" "TaskPaper.app/" "System Preferences.app/" "Stickies.app/" "Skype.app/" "SimpleChord.app/" "Sequel Pro.app/" "Scrivener.app/" "Safari.app/" "Rosetta Stone/" "RegExr.app/" "Rdio Desktop.app/" "QuickTime Player.app/" "Preview.app/" "Photo Booth.app/" "PeepOpen.app/" "Pandora.app/" "Opera.app/" "OmniGraffle Professional.app/" "NetBeans/" "MySQL Tools/" "MozoDojo.app/" "Massive/" "MAMP/" "Mail.app/" "MacFLAC.app/" "LittleSnapper.app/" "Last.fm.app/" "iWork '09/" "iWeb.app/" "iTunes.app/" "iSync.app/" "iPhoto.app/" "iMovie.app/" "Image Capture.app/" "iDVD.app/" "iChm.app/" "iChat.app/" "iCal.app/" "Google Chrome.app/" "GitX.app/" "GarageBand.app/" "Front Row.app/" "Font Book.app/" "Flip4Mac/" "Firefox.app/" "FFView.app/" "ExpanDrive.app/" "Emacs.app/" "DVD Player.app/" "Disco.app/" "Dictionary.app/" "Dashboard.app/" "CSSEdit.app/" "CocoaMySQL.app/" "Chmox.app/" "Chess.app/" "Changes.app/" "calibre.app/" "Calculator.app/" "BookSmart.app/" "BeatportDownloader.app/" "Barnes & Noble eReader.app/" "Automator.app/" "AppZapper.app/" "Amazon MP3 Downloader.app/" "Adobe Stock Photos CS3/" "Adobe Photoshop CS3/" "Adobe Lightroom 2.app/" "Adobe Help Viewer 1.1.app/" "Adobe Flash CS3/" "Adobe Extension Manager/" "Adobe Device Central CS3/" "Adobe Bridge CS3/" "Adobe Acrobat 9 Pro/" "Adobe/" "Address Book.app/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/" (19537 58766) "tools/" "Shared/" "rmnk/" ".localized" "../" "./")
+
+ ("/Users/rmnk/Desktop/feeds/tests/" (19472 63515) "feed_spec.rb" "../" "./")
+
+ ("/Users/rmnk/Applications/" (19349 9854) ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/desktop/" (19482 15005) "walkow/" "WA_017_Walkow_Mechanical/" "Todd Update.rtf" "test_docs/" "stylestumbler/" "Smallcap Daily Flash News 150610 - jac.pdf" "redis_test.rb" "pics/" "pdfconverter/" "ortho.rtf" "luupp/" "lagunadigital2.tmproj" "hmrc.rtf" "forward_look.doc" "feeds/" "ExchangeCodes_revised.xls" "email to john.rtf" "Downloads/" "docs/" "absolute.zip" "absolute/" ".settings/" ".project" ".localized" ".DS_Store" ".dat0bc1.001" "../" "./")
+
+ ("/Applications/MAMP/htdocs/stockopedia/application/" (19386 32446) "views/" "vendor/" "models/" "logs/" "libraries/" "i18n/" "hooks/" "helpers/" "controllers/" "config/" "cache/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/" (19118 7230) "お読みください.rtf" "прочти.rtf" "tmp/" "README.rtf" "MAMP.app/" "logs/" "LIREMOI.rtf" "LIESMICH.rtf" "licences/" "Library/" "LEAME.rtf" "Icon
+" "htdocsactivity.sqlite" "htdocsactivity.sql" "htdocs/" "db/" "conf/" "cgi-bin/" "bin/" ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/Music/Amazon MP3/Pharoah Sanders/Black Unity/" (19444 15673) "01 - Black Unity.mp3" "../" "./")
+
+ ("/Users/rmnk/Music/Amazon MP3/Pharoah Sanders/" (19444 15556) "Black Unity/" "../" "./")
+
+ ("/Users/rmnk/Music/Amazon MP3/" (19444 15556) "Pharoah Sanders/" ".DS_Store" "../" "./")
+
+ ("/Users/rmnk/Music/" (19210 55926) "iTunes/" "Amazon MP3/" ".localized" ".DS_Store" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

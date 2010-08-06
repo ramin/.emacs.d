@@ -1,0 +1,114 @@
+require File.dirname(__FILE__) + '/config.rb'
+
+require 'net/pop' 
+require 'net/smtp'
+require 'tmail'
+
+mail_server = Net::POP3.new('mail.stockopedia.co.uk') 
+
+mail_server.start('publishing', '7stockopedia7') do |pop| 
+ if mail_server.mails.empty? 
+   puts "No mails" 
+ else 
+   puts "#{mail_server.mails.length} mails waiting" 
+
+   mail_server.mails.each do |m|  
+            
+    email = TMail::Mail.parse(m.pop)
+    
+    if lookup.key?(email.from.to_s.strip)
+             
+      @details = lookup[email.from.to_s.strip]
+      filepath = File.dirname(__FILE__) + "/temp/hbmarkets.doc"
+      textfile = File.dirname(__FILE__) + "/temp/hbmarkets.html"
+      
+      unless email.attachments.blank?
+        email.attachments.each do |ament|
+            puts ament.original_filename
+            File.open(filepath,"w") { |local_file|
+              local_file << ament.gets(nil)
+            }
+          end
+      end
+
+      if File.exists?(filepath)          
+        
+        @feed = UserFeed.find(@details['blog_id'])
+        
+        exit
+        
+        if @details['feed_type'] == "blog"
+          puts "inserting new email '#{email.subject}'"
+          u_entry = UserEntry.new(
+            :user_feed => @feed, 
+            :user_id => @feed.user_id, 
+            :url => "", 
+            :title => title,
+            :body => "#{Sanitize.clean(simple_format(email.body_plain.gsub("   ", "<br /><br />")), @config)}",
+            :published_at => Time.parse(email.date.to_s).to_formatted_s(:db),
+            :guid => Time.parse(email.date.to_s).to_formatted_s(:db)
+          )
+
+          u_entry.find_start(@details['start_phrase']) if @details['start_phrase']
+          u_entry.find_cutoff(@details['cutoff_words'])  if @details['cutoff_words']
+          
+          # Tickerize that shizzle
+          @tickerized = Stockopedia.tickerize(u_entry.body)
+          u_entry.body = @tickerized['text']
+          u_entry.save
+          
+          u_entry.errors.each_full{ |msg| puts "#{msg} = #{u_entry.guid}"}
+          
+          if @details["autopublish"] == true
+            puts "doing autopublish to node"
+            # publish it for the user
+            # auto tag the bizzatch  
+            node = Node.new(
+              :title => u_entry.title + "#{@tickerized['companies']}".split(" ")[0, 20].join(" "), 
+              :body => u_entry.body, 
+              :md5 => Digest::MD5.hexdigest(u_entry.title + DateTime.now.to_s), 
+              :username => @feed.user.username, 
+              :user_id => @feed.user_id, 
+              :last_edited_username => @feed.user.username, 
+              :last_edited_user_id => @feed.user_id,
+              :type => "news",
+              :parent_type => "news",              
+              :commented_at => DateTime.now.to_formatted_s(:db),
+              :created_at => DateTime.now.to_formatted_s(:db),
+              :updated_at => DateTime.now.to_formatted_s(:db)
+              )
+            
+            if node.save               
+              puts "node saved"
+              
+              # find an image to publish
+              if not @feed.image.nil?
+                puts "publishing image"
+                begin                      
+                  images = Stockopedia.publish_image(@feed.image, u_entry.title)
+                  node.image = images['key']
+                rescue => e
+                  puts e
+                end    
+              end
+              
+              puts "apply tags and tickers"                  
+              
+              # add some blog level tags
+              node.apply_terms(@details['tags'], "tags") if @details['tags']
+              node.apply_terms(@tickerized['tickers'], "tickers")    
+              node.save                    
+              u_entry.status = "published"  
+              u_entry.save
+              
+              puts "finished"                  
+            end  
+          end
+        end  
+      end  
+    end 
+    end
+ end
+end        
+
+exit

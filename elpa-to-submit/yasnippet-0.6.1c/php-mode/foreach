@@ -1,0 +1,5 @@
+#name : foreach($item as $key => $value)
+# --
+foreach (\$${1:variable} as \$${2:key}: => \$${3:value}) {
+	// code
+}
