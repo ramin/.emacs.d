@@ -26,6 +26,9 @@
 ;; We never want to edit Rubinius bytecode
 (add-to-list 'completion-ignored-extensions ".rbc")
 
+(setq tab-stop-list '(2 4 6 8 10 12, 14, 16, 18, 20))
+
+
 ;;; Rake
 
 (defun pcomplete/rake ()

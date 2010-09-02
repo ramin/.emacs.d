@@ -1310,7 +1310,7 @@ See variable compilation-error-regexp-alist for more details.")
   :type 'string 
   :group 'compile-ruby)
 
-(defcustom ruby-dbg-flags "-w" 
+(defcustom ruby-dbg-flags "" 
   "Flags to give ruby for catching warnings" 
   :type 'string 
   :group 'compile-ruby)

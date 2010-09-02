@@ -355,7 +355,7 @@ Major mode for editing Markdown files.
 ;;;;;;  mode-compile-ignore-makerule-regexp mode-compile-prefered-default-makerule
 ;;;;;;  mode-compile-make-options mode-compile-ignore-makefile-backups
 ;;;;;;  mode-compile-make-program) "mode-compile" "elpa-to-submit/mode-compile.el"
-;;;;;;  (19538 2861))
+;;;;;;  (19552 10827))
 ;;; Generated autoloads from elpa-to-submit/mode-compile.el
 
 (defvar mode-compile-make-program "make" "\
@@ -782,6 +782,34 @@ strings. Note that you must have Font Lock enabled.
 
 ;;;***
 
+;;;### (autoloads (rvm-open-gem rvm-use rvm-activate-corresponding-ruby
+;;;;;;  rvm-use-default) "rvm" "elpa-to-submit/rvm.el" (19558 58996))
+;;; Generated autoloads from elpa-to-submit/rvm.el
+
+(autoload 'rvm-use-default "rvm" "\
+use the rvm-default ruby as the current ruby version
+
+\(fn)" t nil)
+
+(autoload 'rvm-activate-corresponding-ruby "rvm" "\
+activate the corresponding ruby version for the file in the current buffer.
+This function searches for an .rvmrc file and actiavtes the configured ruby.
+If no .rvmrc file is found, the default ruby is used insted.
+
+\(fn)" t nil)
+
+(autoload 'rvm-use "rvm" "\
+switch the current ruby version to any ruby, which is installed with rvm
+
+\(fn NEW-RUBY NEW-GEMSET)" t nil)
+
+(autoload 'rvm-open-gem "rvm" "\
+Not documented
+
+\(fn GEMHOME)" t nil)
+
+;;;***
+
 ;;;### (autoloads (scpaste-region scpaste) "scpaste" "elpa-to-submit/scpaste.el"
 ;;;;;;  (19538 2861))
 ;;; Generated autoloads from elpa-to-submit/scpaste.el
@@ -847,7 +875,7 @@ Just some alien fruit salad to keep you in the zone.
 ;;;***
 
 ;;;### (autoloads nil nil ("elpa-to-submit/color-theme.el" "elpa-to-submit/eshell-vc.el"
-;;;;;;  "elpa-to-submit/notify.el") (19538 15597 130649))
+;;;;;;  "elpa-to-submit/notify.el") (19558 59031 290822))
 
 ;;;***
 

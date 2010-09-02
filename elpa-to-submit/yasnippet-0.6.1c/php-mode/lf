@@ -1,0 +1,3 @@
+#name : Log::factory("...")
+# --
+Log::factory("$1")

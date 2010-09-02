@@ -1,5 +1,118 @@
-class Word   
+# -*- coding: utf-8 -*-
+class Word
 
+  attr_accessor :file, :path, :jod, :file, :temp, :base, :body, :allowed_elements
+  
+  def initialize
+	@path ||= File.dirname(__FILE__) + "/.."
+	@temp ||= "#{@path}/temp"
+    @jod  ||= "/models/lib/jodconverter-cli-2.2.2.jar"
+    create_temp unless temp_exists?
 
+    @allowed_elements = {
+      :elements   => ['img', 'p', 'br'],
+      :attributes => {
+        'img'   => ['src']
+        },
+      :add_attributes => {
+          'a' => {'rel' => 'nofollow'}
+        },
+      :protocols => {
+        'img' => {'src'  => ['http', 'https']}
+      }   
+    }
+  end
+   
+  # convert a word document to html
+  def to_html
+    filename
+    convert(@file, @base)
+  end
 
+  # return the item as a block of clean html
+  def clean_html(start, finish)
+	extract_body(start, finish)
+    @body = Sanitize.clean(@body, @allowed_elements)
+    hb_cleanup()
+    @body
+  end
+
+  def filename
+    @base = @file.chomp(File.extname(@file)) 
+  end
+
+  # Set of html cleaning helpers only....
+  
+  def extract_body(start, finish)
+    text = open("#{@temp}/html/#{@base}/index.html").read
+    text.gsub!("\n", " ")
+    @t = Nokogiri::HTML(text)
+    trigger = false
+    @body = ""
+    @t.css("p.western").each do |node|       
+      if trigger == false
+        trigger = true if node.text.to_s.match(start)
+      else
+        trigger = false if node.text.to_s.match(finish)
+      end
+      @body << node.to_html if node.name.downcase == 'p' && trigger == true
+    end
+  end
+  
+  def hb_cleanup
+    @banned = ["Analysts:", "Tolley, Head of Research", "Chohan, Investment Analyst", "Chohan, Analyst", "Andrew McGeary, Analyst"]
+    @t = Nokogiri::HTML::DocumentFragment.parse(@body)
+    @t.traverse do |node|
+      # puts node.name
+      if node.name.downcase == "text"
+        # puts node
+        @banned.each do |ban|
+          node.unlink if node.text.match(ban) || node.text.strip == ""      
+        end  
+      end  
+    end  
+    
+    @body = @t.to_html
+    @body = @body.gsub("(Amisha Chohan)", "")
+    @body = @body.gsub("(Julian Tolley)", "")
+    @body = @body.gsub("<p></p>", "")
+    @body = @body.gsub("<p><br></p>", "")
+    @body = @body.gsub("<p><br /></p>", "")    
+  end
+
+  def find_and_save_images(path)
+	
+  end
+
+  def upload(path)
+	
+  end
+  
+  # ensure jodconverter exists
+  def jod_found?
+    File.exists?("#{@path}#{@jod}")
+  end
+
+  def html_exists?
+	File.exists?("#{@path}/temp/html/#{base}/index.html") && File.directory?("#{@path}/temp/html/#{@base}")
+  end
+
+  private
+  
+  def convert(from, to)
+    system("java -jar #{@path}#{@jod} #{@temp}/#{from} #{@temp}/html/#{to}/index.html") #raise "Could not execute OpenOffice Conversion"
+  end
+
+  def html_made
+	
+  end
+  
+  def temp_exists?
+	File.exists?("#{@path}/temp/") && File.directory?("#{@path}/temp/")
+  end
+
+  def create_temp
+	File.makedirs("#{@path}/temp/")
+  end
+  
 end

@@ -18,8 +18,8 @@
 (require 'autopair)
 (autopair-global-mode)
 
-(add-to-list 'default-frame-alist '(height . 160))	
-(add-to-list 'default-frame-alist '(width . 140))	
+(add-to-list 'default-frame-alist '(height . 70))	
+(add-to-list 'default-frame-alist '(width . 120))	
 (add-to-list 'default-frame-alist '(font . "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1"))	
 
 (setq-default cursor-type 'bar) 
@@ -58,8 +58,10 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/elpa-to-submit/yasnippet-0.6.1c")
 
+(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rvm.el")
+(require 'rvm) ;; not yasnippet-bundle
+
 (require 'two-mode-mode)
-(require 'html-php)
 
 (add-hook 'html-mode-hook
     (lambda ()
@@ -72,7 +74,9 @@
 
 (setq-default fill-column 200)
 
-
 (load-file "~/.emacs.d/vendor/textmate.el")
 (require 'textmate)
 (textmate-mode)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/")
+(require 'peepopen)
