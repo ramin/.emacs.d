@@ -18,8 +18,8 @@
 (require 'autopair)
 (autopair-global-mode)
 
-(add-to-list 'default-frame-alist '(height . 70))	
-(add-to-list 'default-frame-alist '(width . 120))	
+(add-to-list 'default-frame-alist '(height . 80))	
+(add-to-list 'default-frame-alist '(width . 130))	
 (add-to-list 'default-frame-alist '(font . "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1"))	
 
 (setq-default cursor-type 'bar) 
@@ -29,8 +29,7 @@
 (require 'php-mode)
 (setq c-default-style "bsd" c-basic-offset 4)
 
-(load-file "~/.emacs.d/clojure-mode/clojure-mode.el")
-(require 'clojure-mode)
+
 
 (setq default-tab-width 4) 
 (global-linum-mode 1)

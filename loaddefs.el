@@ -875,7 +875,7 @@ Just some alien fruit salad to keep you in the zone.
 ;;;***
 
 ;;;### (autoloads nil nil ("elpa-to-submit/color-theme.el" "elpa-to-submit/eshell-vc.el"
-;;;;;;  "elpa-to-submit/notify.el") (19558 59031 290822))
+;;;;;;  "elpa-to-submit/notify.el") (19583 47746 131077))
 
 ;;;***
 
