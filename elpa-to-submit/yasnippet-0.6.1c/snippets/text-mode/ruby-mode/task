@@ -1,0 +1,5 @@
+#name : task :something ... end
+# --
+task :$1 do
+	$2
+end
