@@ -82,7 +82,7 @@
 
 (add-to-list 'default-frame-alist '(height . 80))	
 (add-to-list 'default-frame-alist '(width . 130))	
-(add-to-list 'default-frame-alist '(font . "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1"))	
+
 
 (setq-default cursor-type 'bar) 
 (setq-default truncate-lines t)
@@ -146,6 +146,5 @@
 
 
 (global-set-key (kbd "M-p") 'peepopen-goto-file-gui)
-
 
 ;;; init.el ends here
