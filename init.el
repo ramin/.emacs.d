@@ -41,9 +41,12 @@
 (require 'starter-kit-lisp)
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
-(require 'starter-kit-js)
+;;;(require 'starter-kit-js)
+(require 'js2-mode)
 (require 'javascript-mode)
 
+(setq js2-basic-offset 2)
+(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
 
 (regen-autoloads)
 (load custom-file 'noerror)
@@ -79,10 +82,6 @@
 
 (require 'autopair)
 (autopair-global-mode)
-
-(add-to-list 'default-frame-alist '(height . 80))	
-(add-to-list 'default-frame-alist '(width . 130))	
-
 
 (setq-default cursor-type 'bar) 
 (setq-default truncate-lines t)
@@ -132,19 +131,31 @@
 (add-hook 'php-mode-hook '(lambda ()
     (local-set-key (kbd "RET") 'newline-and-indent)))
 
-(setq-default fill-column 200)
+;;;(setq-default fill-column 200)
 
 (load-file "~/.emacs.d/vendor/textmate.el")
 (require 'textmate)
 (textmate-mode)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/")
-(require 'peepopen)
 
-(require 'sr-speedbar)
-(global-set-key (kbd "M-v") 'sr-speedbar-toggle)
+;;;(require 'sr-speedbar)
+;;;(global-set-key (kbd "M-v") 'sr-speedbar-toggle)
+;;;(global-set-key (kbd "M-p") 'peepopen-goto-file-gui)
+
+;;; org mode stuff
+;; The following lines are always needed. Choose your own keys.
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+(tool-bar-mode -1)
+(setq-default delete-selection-mode t)
 
 
-(global-set-key (kbd "M-p") 'peepopen-goto-file-gui)
+(load-file "~/.emacs.d/haml-mode.el")
+(require 'haml-mode)
 
-;;; init.el ends here
+;;; Init.el ends here
