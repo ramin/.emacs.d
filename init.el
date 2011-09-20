@@ -158,30 +158,30 @@
 (load-file "~/.emacs.d/haml-mode.el")
 (require 'haml-mode)
 
-(add-to-list 'load-path "/var/www/otp/lib/tools/emacs/")
-(setq erlang-root-dir "/var/www/otp")
-(setq exec-path (cons "/var/www/otp/bin" exec-path))
-(require 'erlang-start)
+;; (add-to-list 'load-path "/var/www/otp/lib/tools/emacs/")
+;; (setq erlang-root-dir "/var/www/otp")
+;; (setq exec-path (cons "/var/www/otp/bin" exec-path))
+;; (require 'erlang-start)
 
-;; clojure-mode
-(add-to-list 'load-path "/rmn/clojure-mode/")
-(require 'clojure-mode)
+;; ;; clojure-mode
+;; (add-to-list 'load-path "/rmn/clojure-mode/")
+;; (require 'clojure-mode)
 
 
-;; paredit
-(add-to-list 'load-path "/rmn/paredit")
-(require 'paredit)
+;; ;; paredit
+;; (add-to-list 'load-path "/rmn/paredit")
+;; (require 'paredit)
 
-;; slime
-(eval-after-load "slime" 
-  '(progn (slime-setup '(slime-repl))	
-	(defun paredit-mode-enable () (paredit-mode 1))	
-	(add-hook 'slime-mode-hook 'paredit-mode-enable)	
-	(add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
-	(setq slime-protocol-version 'ignore)))
+;; ;; slime
+;; (eval-after-load "slime" 
+;;   '(progn (slime-setup '(slime-repl))	
+;; 	(defun paredit-mode-enable () (paredit-mode 1))	
+;; 	(add-hook 'slime-mode-hook 'paredit-mode-enable)	
+;; 	(add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
+;; 	(setq slime-protocol-version 'ignore)))
 
-(add-to-list 'load-path "/rmn/slime")
-(require 'slime)
-(slime-setup)
+;; (add-to-list 'load-path "/rmn/slime")
+;; (require 'slime)
+;; (slime-setup)
 
 ;;; Init.el ends here
