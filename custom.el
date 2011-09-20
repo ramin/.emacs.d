@@ -9,6 +9,8 @@
  '(javascript-auto-indent-flag nil)
  '(javascript-indent-level 2)
  '(js2-basic-offset 2)
+ '(ruby-deep-indent-paren-style nil)
+ '(ruby-indent-tabs-mode nil)
  '(show-paren-mode t)
  '(speedbar-show-unknown-files t)
  '(speedbar-use-images nil)
