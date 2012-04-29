@@ -80,8 +80,8 @@
 
 (global-hl-line-mode 1)
 
-(require 'autopair)
-(autopair-global-mode)
+;; (require 'autopair)
+;; (autopair-global-mode)
 
 (setq-default cursor-type 'bar) 
 (setq-default truncate-lines t)
@@ -158,30 +158,25 @@
 (load-file "~/.emacs.d/haml-mode.el")
 (require 'haml-mode)
 
-;; (add-to-list 'load-path "/var/www/otp/lib/tools/emacs/")
-;; (setq erlang-root-dir "/var/www/otp")
-;; (setq exec-path (cons "/var/www/otp/bin" exec-path))
-;; (require 'erlang-start)
+(add-to-list 'load-path "~/.emacs.d/scala")
+(require 'scala-mode-auto)
 
-;; ;; clojure-mode
-;; (add-to-list 'load-path "/rmn/clojure-mode/")
-;; (require 'clojure-mode)
+;; Load the ensime lisp code...
+;; (add-to-list 'load-path "~/.emacs.d/ensime/elisp/")
+;; (require 'ensime)
 
+;; This step causes the ensime-mode to be started whenever
+;; scala-mode is started for a buffer. You may have to customize this step
+;; if you're not using the standard scala mode.
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
-;; ;; paredit
-;; (add-to-list 'load-path "/rmn/paredit")
-;; (require 'paredit)
+(add-to-list 'load-path "~/.emacs.d/erlang")
+(setq erlang-root-dir "/usr/local/lib/erlang")
+(setq exec-path (cons "/usr/local/lib/bin" exec-path))
+(require 'erlang-start)
 
-;; ;; slime
-;; (eval-after-load "slime" 
-;;   '(progn (slime-setup '(slime-repl))	
-;; 	(defun paredit-mode-enable () (paredit-mode 1))	
-;; 	(add-hook 'slime-mode-hook 'paredit-mode-enable)	
-;; 	(add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
-;; 	(setq slime-protocol-version 'ignore)))
+(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+(require 'coffee-mode)
 
-;; (add-to-list 'load-path "/rmn/slime")
-;; (require 'slime)
-;; (slime-setup)
 
 ;;; Init.el ends here
