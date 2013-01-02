@@ -178,5 +178,17 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
 (require 'coffee-mode)
 
+(add-to-list 'load-path "~/.emacs.d/go-mode-load.el" t)
+(require 'go-mode-load)
+
+;;;
+(add-to-list 'auto-mode-alist '("\\.html.erb$" . html-mode))
+
+;;; use css mode for scss files, maybe sass mode later
+(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
+
+;;; css mode 2 space indent
+(setq css-indent-offset 2)
 
 ;;; Init.el ends here
+

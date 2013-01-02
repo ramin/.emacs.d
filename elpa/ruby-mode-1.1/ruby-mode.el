@@ -1409,6 +1409,7 @@ See `font-lock-syntax-table'.")
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.god$" . ruby-mode))
 
 ;;;###autoload
 (progn
