@@ -63,6 +63,9 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 
+;;; color themes
+(load-file "~/.emacs.d/themes/zenburn-theme.el")
+
 ;;;(require 'color-theme)
 ;;;(add-to-list 'load-path (concat dotfiles-dir "/themes"))
 
@@ -92,6 +95,7 @@
 
 (setq default-tab-width 4) 
 (global-linum-mode 1)
+(custom-set-variables '(linum-format (quote "%d ")))
 
 ;;; (put 'autopair-insert-opening 'delete-selection t)
 ;;; (put 'autopair-skip-close-maybe 'delete-selection t)
@@ -188,6 +192,8 @@
 
 ;;; css mode 2 space indent
 (setq css-indent-offset 2)
+
+(menu-bar-mode -1)
 
 ;;; Init.el ends here
 
