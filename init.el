@@ -63,8 +63,8 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 
-(require 'color-theme)
-(add-to-list 'load-path (concat dotfiles-dir "/themes"))
+;;;(require 'color-theme)
+;;;(add-to-list 'load-path (concat dotfiles-dir "/themes"))
 
 ;;;(load-file "~/.emacs.d/themes/zenburn.el")
 ;;;(zenburn)
@@ -72,8 +72,8 @@
 ;;;(load-file "~/.emacs.d/themes/color-theme-merbivore.el")
 ;;;(color-theme-merbivore)
 
-(load-file "~/.emacs.d/themes/color-theme-raminius.el")
-(color-theme-raminius)
+;;;(load-file "~/.emacs.d/themes/color-theme-raminius.el")
+;;;(color-theme-raminius)
 
 (set-face-background 'show-paren-match-face "#593A58")
 (set-face-background 'region "#424951") ; Set region background color 
@@ -151,9 +151,8 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-(tool-bar-mode -1)
+;;;(tool-bar-mode -1)
 (setq-default delete-selection-mode t)
-
 
 (load-file "~/.emacs.d/haml-mode.el")
 (require 'haml-mode)
@@ -175,11 +174,11 @@
 (setq exec-path (cons "/usr/local/lib/bin" exec-path))
 (require 'erlang-start)
 
-(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
-(require 'coffee-mode)
+;;;(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+;;;(require 'coffee-mode)
 
-(add-to-list 'load-path "~/.emacs.d/go-mode-load.el" t)
-(require 'go-mode-load)
+;;;(add-to-list 'load-path "~/.emacs.d/go-mode-load.el" t)
+;;;(require 'go-mode-load)
 
 ;;;
 (add-to-list 'auto-mode-alist '("\\.html.erb$" . html-mode))
