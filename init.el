@@ -195,5 +195,8 @@
 
 (menu-bar-mode -1)
 
+;;; prevent ctrl-z killing the buffer
+(global-unset-key (kbd "C-z"))
+
 ;;; Init.el ends here
 
