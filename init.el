@@ -45,6 +45,9 @@
 (require 'js2-mode)
 (require 'javascript-mode)
 
+(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rhtml/")
+(require 'rhtml-mode)
+
 (setq js2-basic-offset 2)
 (add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
 
@@ -129,7 +132,7 @@
 (add-hook 'html-mode-hook
     (lambda ()
       ;; Default indentation is usually 2 spaces, changing to 4.
-      (set (make-local-variable 'sgml-basic-offset) 4)))
+      (set (make-local-variable 'sgml-basic-offset) 2)))
 
 (setq c-hungry-delete-key t)
 (add-hook 'php-mode-hook '(lambda ()
@@ -185,7 +188,7 @@
 ;;;(require 'go-mode-load)
 
 ;;;
-(add-to-list 'auto-mode-alist '("\\.html.erb$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.html.erb$" . rhtml-mode))
 
 ;;; use css mode for scss files, maybe sass mode later
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
