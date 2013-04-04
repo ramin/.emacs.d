@@ -41,15 +41,15 @@
 (require 'starter-kit-lisp)
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
-;;;(require 'starter-kit-js)
 (require 'js2-mode)
-(require 'javascript-mode)
+;;;(require 'javascript-mode)
+;;;(require 'js-mode)
 
 (add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rhtml/")
 (require 'rhtml-mode)
 
 (setq js2-basic-offset 2)
-(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (regen-autoloads)
 (load custom-file 'noerror)
