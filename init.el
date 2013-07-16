@@ -181,8 +181,9 @@
 (setq exec-path (cons "/usr/local/lib/bin" exec-path))
 (require 'erlang-start)
 
-;;;(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
-;;;(require 'coffee-mode)
+(setq tab-width 2)
+(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+(require 'coffee-mode)
 
 ;;;(add-to-list 'load-path "~/.emacs.d/go-mode-load.el" t)
 ;;;(require 'go-mode-load)
@@ -201,5 +202,6 @@
 ;;; prevent ctrl-z killing the buffer
 (global-unset-key (kbd "C-z"))
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;; Init.el ends here
 
