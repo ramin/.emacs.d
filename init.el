@@ -123,10 +123,6 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/elpa-to-submit/yasnippet-0.6.1c")
 
-(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rvm.el")
-(require 'rvm)
-(rvm-use-default)
-
 (require 'two-mode-mode)
 
 (add-hook 'html-mode-hook
