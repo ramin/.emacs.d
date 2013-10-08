@@ -48,6 +48,8 @@
 (add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rhtml/")
 (require 'rhtml-mode)
 
+(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
+
 (setq js2-basic-offset 2)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
@@ -82,21 +84,21 @@
 ;;;(color-theme-raminius)
 
 (set-face-background 'show-paren-match-face "#593A58")
-(set-face-background 'region "#424951") ; Set region background color 
+(set-face-background 'region "#424951") ; Set region background color
 
 (global-hl-line-mode 1)
 
 ;; (require 'autopair)
 ;; (autopair-global-mode)
 
-(setq-default cursor-type 'bar) 
+(setq-default cursor-type 'bar)
 (setq-default truncate-lines t)
 (setq-default longlines-auto-wrap nil)
 
 (require 'php-mode)
 (setq c-default-style "bsd" c-basic-offset 4)
 
-(setq default-tab-width 4) 
+(setq default-tab-width 4)
 (global-linum-mode 1)
 (custom-set-variables '(linum-format (quote "%d ")))
 
@@ -200,4 +202,3 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;; Init.el ends here
-
