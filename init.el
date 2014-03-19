@@ -42,8 +42,6 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'js2-mode)
-;;;(require 'javascript-mode)
-;;;(require 'js-mode)
 
 (add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rhtml/")
 (require 'rhtml-mode)
@@ -123,10 +121,6 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/elpa-to-submit/yasnippet-0.6.1c")
 
-(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/rvm.el")
-(require 'rvm)
-(rvm-use-default)
-
 (require 'two-mode-mode)
 
 (add-hook 'html-mode-hook
@@ -164,29 +158,9 @@
 (load-file "~/.emacs.d/haml-mode.el")
 (require 'haml-mode)
 
-(add-to-list 'load-path "~/.emacs.d/scala")
-(require 'scala-mode-auto)
-
-;; Load the ensime lisp code...
-;; (add-to-list 'load-path "~/.emacs.d/ensime/elisp/")
-;; (require 'ensime)
-
-;; This step causes the ensime-mode to be started whenever
-;; scala-mode is started for a buffer. You may have to customize this step
-;; if you're not using the standard scala mode.
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
-(add-to-list 'load-path "~/.emacs.d/erlang")
-(setq erlang-root-dir "/usr/local/lib/erlang")
-(setq exec-path (cons "/usr/local/lib/bin" exec-path))
-(require 'erlang-start)
-
 (setq tab-width 2)
 (add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
 (require 'coffee-mode)
-
-;;;(add-to-list 'load-path "~/.emacs.d/go-mode-load.el" t)
-;;;(require 'go-mode-load)
 
 ;;;
 (add-to-list 'auto-mode-alist '("\\.html.erb$" . rhtml-mode))
@@ -204,4 +178,3 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;; Init.el ends here
-

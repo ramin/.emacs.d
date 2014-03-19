@@ -1,0 +1,5 @@
+#name : it '<test description>' ... end
+# --
+context '${1}' do
+    $2
+end

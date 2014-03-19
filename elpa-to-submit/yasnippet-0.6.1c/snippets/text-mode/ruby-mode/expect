@@ -1,0 +1,3 @@
+#name : expect(:method){ should == something }
+# --
+expect($1).to eq $2
